@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>退到一旁的博客</title>
+  
+  <subtitle>好好学习，天天向上</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://omg-tdyp.github.io/"/>
+  <updated>2018-05-11T13:07:39.238Z</updated>
+  <id>https://omg-tdyp.github.io/</id>
+  
+  <author>
+    <name>Cai kk</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>nginx的一些常用命令</title>
+    <link href="https://omg-tdyp.github.io/2018/05/09/nginx/"/>
+    <id>https://omg-tdyp.github.io/2018/05/09/nginx/</id>
+    <published>2018-05-09T07:14:13.000Z</published>
+    <updated>2018-05-11T13:07:39.238Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="1、启动nginx"><a href="#1、启动nginx" class="headerlink" title="1、启动nginx"></a>1、启动nginx</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">start nginx</span><br></pre></td></tr></table></figure><h2 id="2、重启nginx"><a href="#2、重启nginx" class="headerlink" title="2、重启nginx"></a>2、重启nginx</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nginx -s reload</span><br></pre></td></tr></table></figure><h2 id="3、停止nginx"><a href="#3、停止nginx" class="headerlink" title="3、停止nginx"></a>3、停止nginx</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nginx -s stop</span><br></pre></td></tr></table></figure><h2 id="4、退出nginx"><a href="#4、退出nginx" class="headerlink" title="4、退出nginx"></a>4、退出nginx</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nginx -s quit</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;1、启动nginx&quot;&gt;&lt;a href=&quot;#1、启动nginx&quot; class=&quot;headerlink&quot; title=&quot;1、启动nginx&quot;&gt;&lt;/a&gt;1、启动nginx&lt;/h2&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;
+      
+    
+    </summary>
+    
+      <category term="nginx" scheme="https://omg-tdyp.github.io/categories/nginx/"/>
+    
+    
+      <category term="nginx" scheme="https://omg-tdyp.github.io/tags/nginx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git的一些常用操作</title>
+    <link href="https://omg-tdyp.github.io/2018/05/08/git/"/>
+    <id>https://omg-tdyp.github.io/2018/05/08/git/</id>
+    <published>2018-05-08T08:14:20.000Z</published>
+    <updated>2018-05-11T13:07:39.237Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="1、克隆远程仓库到本地"><a href="#1、克隆远程仓库到本地" class="headerlink" title="1、克隆远程仓库到本地"></a>1、克隆远程仓库到本地</h2><p>首先你要知道一个远程仓库的地址，然后<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git@github.com:OMG-tdyp/vue-koa2.git</span><br></pre></td></tr></table></figure></p><h2 id="2、添加本地仓库远程"><a href="#2、添加本地仓库远程" class="headerlink" title="2、添加本地仓库远程"></a>2、添加本地仓库远程</h2><p>在GitHub上创建一个新的仓库后，可以把本地仓库的内容推送到GitHub仓库<br>要关联一个远程库，使用命令（例如）<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin git@github.com:OMG-tdyp/vue-koa2.git</span><br></pre></td></tr></table></figure></p><p>关联后，使用命令<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure></p><p>第一次推送master分支的所有内容</p><h2 id="3、把文件添加到版本库"><a href="#3、把文件添加到版本库" class="headerlink" title="3、把文件添加到版本库"></a>3、把文件添加到版本库</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add .(这个是添加所有，也可以添加单个文件)</span><br><span class="line">git commit -m <span class="string">"此次操作所做的事情"</span></span><br></pre></td></tr></table></figure><p>add 命令把文件提交到缓存区<br>commit 把缓存区文件提交到版本库，-m 参数是指定comments<br>可以add多次，一次commit</p><h2 id="4、查看版本库状态"><a href="#4、查看版本库状态" class="headerlink" title="4、查看版本库状态"></a>4、查看版本库状态</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br></pre></td></tr></table></figure><p>该命令查看到的结果分为两部分：<br>一，add到缓存区内等待被commit到版本库的更改。<br>二，工作区内的还未add到缓存区的更改</p><h2 id="5、拉取最新代码"><a href="#5、拉取最新代码" class="headerlink" title="5、拉取最新代码"></a>5、拉取最新代码</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull</span><br></pre></td></tr></table></figure><h2 id="6、提交最新代码"><a href="#6、提交最新代码" class="headerlink" title="6、提交最新代码"></a>6、提交最新代码</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push</span><br></pre></td></tr></table></figure><h2 id="7、废弃工作区修改"><a href="#7、废弃工作区修改" class="headerlink" title="7、废弃工作区修改"></a>7、废弃工作区修改</h2><p>单个文件废弃<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -- index.txt</span><br></pre></td></tr></table></figure></p><p>整个工程废弃<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -f</span><br></pre></td></tr></table></figure></p><p>这个命令会把你工作区中的修改回退到最后一次add命令之前的状态<br>即如果缓存区有内容，则回退到和缓存区一直<br>如果缓存区为空，则回退到和版本库一致</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;1、克隆远程仓库到本地&quot;&gt;&lt;a href=&quot;#1、克隆远程仓库到本地&quot; class=&quot;headerlink&quot; title=&quot;1、克隆远程仓库到本地&quot;&gt;&lt;/a&gt;1、克隆远程仓库到本地&lt;/h2&gt;&lt;p&gt;首先你要知道一个远程仓库的地址，然后&lt;br&gt;&lt;figure clas
+      
+    
+    </summary>
+    
+      <category term="git" scheme="https://omg-tdyp.github.io/categories/git/"/>
+    
+    
+      <category term="git" scheme="https://omg-tdyp.github.io/tags/git/"/>
+    
+  </entry>
+  
+</feed>
